@@ -60,20 +60,20 @@ function listarUrl() {
      }
  }
  
- function obtenerDatos() {
+ function obtenerDatos(id,nombre,descripcion) {
      // Obteniendo los valores de los campos
      let id = document.getElementById('id').value;
      let nombre = document.getElementById('nombre').value;
      let descripcion = document.getElementById('descripcion').value;
      let url = document.getElementById('url').value;
-     let simulador = {
+     let url = {
         id: " ",
         url: "",
         nombre: "",
         descripcion: ""
          
      }
-     return simulador
+     return url
  }
  function crearUrl() {
     let simulador = obtenerDatos()
